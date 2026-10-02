@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#2563eb">
+
+    <title>PaperFit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <div class="logo">
+                    <span></span>
+                </div>
+
+                <div>
+                    <h1>PaperFit</h1>
+                    <p>Print-ready, made simple.</p>
+                </div>
+            </div>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                ⋮
+            </button>
+        </header>
+
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                A4 Print Studio
+            </div>
+
+            <h2>
+                Turn any photo into a
+                <span>print-ready page.</span>
+            </h2>
+
+            <p class="hero-text">
+                Upload a photo, adjust it to A4 and get it ready
+                for printing in just a few steps.
+            </p>
+
+        </section>
+
+
+        <!-- Upload Card -->
+        <section class="upload-card" id="uploadCard">
+
+            <div class="upload-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M12 16V4M12 4L7.5 8.5M12 4L16.5 8.5"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M5 13.5V18C5 19.1 5.9 20 7 20H17C18.1 20 19 19.1 19 18V13.5"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </div>
+
+            <h3>Upload your photo</h3>
+
+            <p>
+                JPG, JPEG, PNG or WEBP
+            </p>
+
+            <button class="primary-btn" id="uploadBtn">
+                <span>Choose Photo</span>
+                <span class="arrow">→</span>
+            </button>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/jpeg,image/png,image/webp"
+                hidden
+            >
+
+        </section>
+
+
+        <!-- Camera -->
+        <section class="camera-section">
+
+            <button class="camera-btn" id="cameraBtn">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M4 8.5C4 7.67 4.67 7 5.5 7H8L9.3 5H14.7L16 7H18.5C19.33 7 20 7.67 20 8.5V17.5C20 18.33 19.33 19 18.5 19H5.5C4.67 19 4 18.33 4 17.5V8.5Z"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="13"
+                        r="3"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                    />
+                </svg>
+
+                <span>Take a Photo</span>
+
+            </button>
+
+            <input
+                type="file"
+                id="cameraInput"
+                accept="image/*"
+                capture="environment"
+                hidden
+            >
+
+        </section>
+
+
+        <!-- How it works -->
+        <section class="how-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="small-label">HOW IT WORKS</p>
+                    <h3>Three simple steps</h3>
+                </div>
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">01</div>
+
+                    <div>
+                        <h4>Choose a photo</h4>
+                        <p>Upload from your device or use your camera.</p>
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="step-number">02</div>
+
+                    <div>
+                        <h4>Fit it to A4</h4>
+                        <p>Adjust the photo, orientation and margins.</p>
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="step-number">03</div>
+
+                    <div>
+                        <h4>Print or save</h4>
+                        <p>Generate your print-ready A4 PDF.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>PaperFit <span>•</span> Your photo. Your paper. Your way.</p>
+        </footer>
+
+    </main>
+
+
+    <!-- Selected Image Preview Modal -->
+    <div class="preview-overlay" id="previewOverlay">
+
+        <div class="preview-box">
+
+            <button class="close-btn" id="closePreview">×</button>
+
+            <div class="preview-image-container">
+                <img id="previewImage" src="" alt="Selected photo">
+            </div>
+
+            <div class="preview-content">
+
+                <p class="small-label">PHOTO SELECTED</p>
+
+                <h3>Ready to edit?</h3>
+
+                <p>
+                    Your photo has been loaded successfully.
+                </p>
+
+                <button class="primary-btn full-btn" id="continueBtn">
+                    Continue to A4 Editor
+                    <span class="arrow">→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

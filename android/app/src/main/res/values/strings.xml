@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PaperFit</string>
+    <string name="title_activity_main">PaperFit</string>
+    <string name="package_name">com.gorav.paperfit</string>
+    <string name="custom_url_scheme">com.gorav.paperfit</string>
+</resources>
